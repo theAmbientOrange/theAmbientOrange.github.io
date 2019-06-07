@@ -1,17 +1,21 @@
 <template>
   <v-app>
-    <NavigationBar/>
-    <v-content></v-content>
+    <Sidebar/>
+    <v-content>
+      <Content id="content"/>
+    </v-content>
   </v-app>
 </template>
 
 <script>
-import NavigationBar from "@/components/NavigationBar";
+import Sidebar from "@/components/Sidebar";
+import Content from "@/components/Content";
 
 export default {
   name: "App",
   components: {
-    NavigationBar
+    Sidebar,
+    Content
   },
   data() {
     return {
@@ -20,3 +24,12 @@ export default {
   }
 };
 </script>
+
+<style>
+#content {
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+</style>
