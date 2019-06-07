@@ -3,7 +3,7 @@
     <div id="about">
       <h1>about</h1>
       <p>Hello! My name is James Wu, and thank you for visiting my website.</p>
-      <p>My interests lie largely in developing real-time systems, writing C++ code, and video game development.</p>
+      <p>My primary interests are in video game development, writing C++ code, and real-time systems.</p>
       <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
       <p>Outside of work, I love making and playing video games, making 3D models, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
