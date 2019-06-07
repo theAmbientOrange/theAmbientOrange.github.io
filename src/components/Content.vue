@@ -3,8 +3,8 @@
     <div id="about">
       <h1>about</h1>
       <p>Hello! My name is James Wu, and thank you for visiting my website.</p>
-      <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
       <p>My interests lie largely in developing real-time systems, writing C++ code, and video game development.</p>
+      <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
       <p>Outside of work, I love making and playing video games, making 3D models, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
     </div>
@@ -73,6 +73,13 @@ export default {
         title: "started school @ University of Virginia",
         dates: "August 2014",
         description: "began undergraduate studies in engineering"
+      },
+      {
+        color: "green",
+        icon: "mood",
+        title: "birthday",
+        dates: "August 10, 1996",
+        description: "James Wu has entered the world"
       }
     ]
   })
@@ -82,6 +89,7 @@ export default {
 <style>
 /*Based on https://stackoverflow.com/a/38994837*/
 #content {
+  width: 80%;
   overflow-y: auto;
   -ms-overflow-style: none; /*IE 10+*/
   scrollbar-width: none; /*Firefox*/
