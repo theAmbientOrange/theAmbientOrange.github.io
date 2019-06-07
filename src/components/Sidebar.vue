@@ -2,8 +2,9 @@
   <nav>
     <v-toolbar flat app class="blue lighten-3">
       <v-toolbar-side-icon @click="toggleSidebar"></v-toolbar-side-icon>
+      <v-spacer></v-spacer>
       <v-toolbar-title>
-        <span class="font-weight-light">TheAmbientOrange 🍊</span>
+        <span class="font-weight-light">theAmbientOrange 🍊</span>
       </v-toolbar-title>
     </v-toolbar>
 

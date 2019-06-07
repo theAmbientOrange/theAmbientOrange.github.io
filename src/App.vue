@@ -27,9 +27,8 @@ export default {
 
 <style>
 #content {
-  position: fixed;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
+  width: 80%;
+  margin: auto;
+  height: 100%;
 }
 </style>

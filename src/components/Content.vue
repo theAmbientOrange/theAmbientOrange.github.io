@@ -1,19 +1,98 @@
 <template>
-  <div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla aliquam odio, eu mattis neque euismod ut. Nam vestibulum mauris consectetur tincidunt bibendum. Sed pellentesque pretium ante sit amet porttitor. Maecenas sem mauris, gravida accumsan ultricies sit amet, varius eget dui. Phasellus accumsan, ante ac lacinia euismod, neque orci bibendum sapien, ut aliquet augue enim non mauris. Quisque porttitor pulvinar nulla, vel cursus sapien posuere ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed blandit sem lectus, id lobortis justo elementum vitae. Pellentesque nec eros vitae risus egestas aliquet ac sit amet purus. Maecenas varius diam nec tincidunt lacinia. Cras ex sapien, pharetra id euismod quis, commodo eget urna. Mauris ac libero at turpis porta bibendum a non quam.
-      Praesent vitae aliquam justo. Donec scelerisque, metus vitae vestibulum luctus, purus lacus ultrices nulla, nec suscipit augue risus tristique mi. Pellentesque hendrerit a orci quis rutrum. Nullam ultricies lorem eget purus faucibus convallis. Sed justo purus, consectetur et egestas id, tempus ac justo. Mauris iaculis, mauris eget volutpat iaculis, ex dolor eleifend mauris, sed vestibulum tortor nibh nec urna. Integer velit nisi, lobortis sed sapien non, efficitur volutpat tortor.
-      Nulla pellentesque sed ipsum sit amet auctor. In suscipit egestas pretium. Nullam mollis maximus convallis. Fusce interdum venenatis vehicula. Morbi eget odio nisi. Donec tincidunt, justo in maximus fermentum, augue augue faucibus odio, id condimentum neque nisl non leo. Maecenas consectetur vitae leo vitae faucibus. Nulla bibendum, lectus ut consequat hendrerit, odio lorem gravida turpis, ut bibendum libero dui vitae dolor. Aenean facilisis auctor elit, commodo ultricies dui ultricies at. Quisque luctus ipsum eu neque egestas venenatis.
-      Nam tincidunt libero nulla, at auctor urna blandit luctus. Morbi et justo sollicitudin, placerat sapien quis, rutrum mi. Phasellus a scelerisque mauris, quis convallis libero. Nam vitae magna tellus. Proin scelerisque elit at nunc congue, eget accumsan risus lobortis. Aenean vestibulum faucibus lectus ut accumsan. Vestibulum ligula ligula, tempor sit amet sem at, tristique imperdiet ipsum.
-      Nullam auctor ex velit, a pharetra sem posuere id. Vestibulum quis quam eu dolor varius commodo eu ut velit. Nunc ac ligula vitae dui mattis cursus eget ut enim. Proin varius ipsum et ex commodo, sit amet consequat ligula venenatis. Aliquam sed augue vel tellus luctus cursus nec at lectus. Praesent placerat eleifend eros, at aliquet metus interdum id. Integer eu molestie nibh, eu iaculis quam. Praesent tincidunt tristique justo, vel elementum diam ornare vel. Praesent condimentum vehicula felis, at fermentum purus congue vel.
-    </p>
-    <p></p>
+  <div id="content">
+    <div id="about">
+      <h1>about</h1>
+      <p>Hello! My name is James Wu, and thank you for visiting my website.</p>
+      <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
+      <p>My interests lie largely in developing real-time systems, writing C++ code, and video game development.</p>
+      <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
+      <p>Outside of work, I love making and playing video games, making 3D models, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
+    </div>
+    <div id="career">
+      <h1>career</h1>
+      <v-timeline align-top>
+        <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon">
+          <template v-slot:opposite>
+            <span :class="`headline font-weight-bold ${item.color}--text`" v-text="item.dates"></span>
+          </template>
+          <div class="py-3">
+            <h2 :class="`headline font-weight-light mb-3 ${item.color}--text`">{{item.title}}</h2>
+            <div>{{item.description}}</div>
+          </div>
+        </v-timeline-item>
+      </v-timeline>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    items: [
+      {
+        color: "blue",
+        icon: "work",
+        title: "software engineer @ Capital One",
+        dates: "February 2018 - present",
+        description:
+          "Transaction Underwriting and Deployment Pipeline Compliance (Java, Python)"
+      },
+      {
+        color: "orange",
+        icon: "school",
+        title: "graduated from University of Virginia",
+        dates: "December 2017",
+        description: "finished undergraduate studies with high honors"
+      },
+      {
+        color: "blue",
+        icon: "star_border",
+        title: "intern @ Capital One",
+        dates: "Summer 2017",
+        description:
+          "developed Apache Spark application for Rewards Earn Engine (Java)"
+      },
+      {
+        color: "purple",
+        icon: "star_border",
+        title: "intern @ Leidos",
+        dates: "Summer 2016",
+        description:
+          "contributed to RDUCE, a LIDAR compression application (C++)"
+      },
+      {
+        color: "blue",
+        icon: "star_border",
+        title: "intern @ Fairfax Collegiate",
+        dates: "Summer 2015",
+        description: "taught (rowdy) 4-8th grade students Lego Mindstorms"
+      },
+      {
+        color: "orange",
+        icon: "school",
+        title: "started school @ University of Virginia",
+        dates: "August 2014",
+        description: "began undergraduate studies in engineering"
+      }
+    ]
+  })
+};
 </script>
 
 <style>
+/*Based on https://stackoverflow.com/a/38994837*/
+#content {
+  overflow-y: auto;
+  -ms-overflow-style: none; /*IE 10+*/
+  scrollbar-width: none; /*Firefox*/
+}
+
+#content::-webkit-scrollbar {
+  display: none; /*Safari and Chrome*/
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 </style>
