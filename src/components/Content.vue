@@ -2,21 +2,27 @@
   <div id="content">
     <div id="about">
       <h1>about</h1>
+      <img id="picture-of-me" src="../assets/james.jpg">
       <p>Hello! My name is James Wu, and thank you for visiting my website.</p>
       <p>My primary interests are in video game development, writing C++ code, and real-time systems.</p>
       <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
-      <p>Outside of work, I love making and playing video games, making 3D models, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
+      <p>Outside of work, I love making and playing video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
     </div>
+
+    <div id="side-projects">
+      <h1>side projects</h1>
+    </div>
+
     <div id="career">
       <h1>career</h1>
       <v-timeline align-top>
         <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon">
           <template v-slot:opposite>
-            <span :class="`headline font-weight-bold ${item.color}--text`" v-text="item.dates"></span>
+            <span :class="`headline font-weight-light ${item.color}--text`" v-text="item.dates"></span>
           </template>
           <div class="py-3">
-            <h2 :class="`headline font-weight-light mb-3 ${item.color}--text`">{{item.title}}</h2>
+            <h2 :class="`headline font-weight-bold mb-3 ${item.color}--text`">{{item.title}}</h2>
             <div>{{item.description}}</div>
           </div>
         </v-timeline-item>
@@ -42,7 +48,7 @@ export default {
         icon: "school",
         title: "graduated from University of Virginia",
         dates: "December 2017",
-        description: "finished undergraduate studies with high honors"
+        description: "finished undergraduate studies with distinction"
       },
       {
         color: "blue",
@@ -97,6 +103,13 @@ export default {
 
 #content::-webkit-scrollbar {
   display: none; /*Safari and Chrome*/
+}
+
+#picture-of-me {
+  float: right;
+  width: 25%;
+  height: 25%;
+  border-radius: 30px;
 }
 
 h1 {
