@@ -9,28 +9,19 @@
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
       <p>Outside of work, I love making and playing video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
     </div>
-
-    <div id="side-projects">
-      <h1>side projects</h1>
-      <p>
-        These projects can be found on
-        <a
-          href="https://github.com/theAmbientOrange"
-          target="_blank"
-        >my Github</a>.
-      </p>
-    </div>
-
+    <SideProjects/>
     <Career/>
   </div>
 </template>
 
 <script>
 import Career from "@/components/Career";
+import SideProjects from "@/components/SideProjects";
 
 export default {
   components: {
-    Career
+    Career,
+    SideProjects
   }
 };
 </script>
