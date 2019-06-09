@@ -4,10 +4,10 @@
     <v-timeline align-top>
       <v-timeline-item v-for="(item, i) in items" :key="i" :color="item.color" :icon="item.icon">
         <template v-slot:opposite>
-          <span :class="`headline font-weight-light ${item.color}--text`" v-text="item.dates"></span>
+          <span :class="`title font-weight-light ${item.color}--text`" v-text="item.dates"></span>
         </template>
         <div class="py-3">
-          <h2 :class="`headline font-weight-bold mb-3 ${item.color}--text`">{{item.title}}</h2>
+          <h2 :class="`title font-weight-bold mb-3 ${item.color}--text`">{{item.title}}</h2>
           <div>{{item.description}}</div>
         </div>
       </v-timeline-item>
