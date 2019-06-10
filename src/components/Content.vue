@@ -7,7 +7,7 @@
       <p>My primary interests are in video game development, writing C++ code, and real-time systems.</p>
       <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
-      <p>Outside of work, I love making and playing video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, and watching MIT OpenCourseware videos.</p>
+      <p>Outside of work, I love making video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, playing video games, and watching MIT OpenCourseware videos.</p>
     </div>
     <SideProjects/>
     <Career/>

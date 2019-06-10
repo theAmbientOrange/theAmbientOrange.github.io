@@ -17,7 +17,7 @@
             v-for="item in items"
             :key="item.title"
             v-bind="{ [`sm${item.flex}`]: true }"
-            id="yee"
+            class="card-flex"
           >
             <SideProjectsCard :cardDetails="item"/>
           </v-flex>
@@ -34,20 +34,32 @@ export default {
   data: () => ({
     items: [
       {
+        title: "Star Runner 2019",
+        description:
+          "(2019-present)\n\nInfinite running game written in C++ using Unreal Engine 4.\n\nMy friend and I wanted to learn Unreal Engine 4 and thought this would be a good starting point.",
+        githubUrl: "https://github.com/theAmbientOrange/star-runner-2019",
+        src:
+          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/master/src/assets/miracle-messages.png",
+        flex: 6,
+        showDescription: false
+      },
+      {
         title: "Miracle Messages",
-        description: "Greetings boi",
+        description:
+          "(2016-2017)\n\nMy friends and I built this for Miracle Messages, the non-profit organization reconnecting the homeless with their loved ones. I was the lead mobile developer, and we deployed the app onto the Google Play store back in October 2016.\n\nBuilt using Android and AWS.",
         githubUrl: "https://github.com/miracle-messages/mm-android-mobile",
         src:
-          "https://images.unsplash.com/photo-1534448177492-6d698f12a59a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/master/src/assets/miracle-messages.png",
         flex: 6,
         showDescription: false
       },
       {
         title: "Big Tuna",
-        description: "Greetings boi",
-        githubUrl: "https://github.com/miracle-messages/mm-android-mobile",
+        description:
+          "(2018-present)\n\niOS app I am building with my friends that allows users to discover restaurants nearby via user posts and geolocation.",
+        githubUrl: "https://github.com/aomori-nebuta/bigtuna-ios",
         src:
-          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/master/src/assets/miracle-messages.png",
+          "https://raw.githubusercontent.com/aomori-nebuta/bigtuna-ios/master/BigTuna/Assets.xcassets/Splash.imageset/Splash.png",
         flex: 6,
         showDescription: false
       }
@@ -60,25 +72,4 @@ export default {
 </script>
 
 <style>
-#paul {
-  width: 100%;
-  height: 50vw;
-  position: relative;
-}
-
-#guy {
-  height: 100%;
-  border: none;
-  position: absolute;
-  bottom: 0px;
-}
-.side-project-image {
-  width: 50vw;
-  height: 50vw;
-  object-fit: contain;
-  overflow: hidden;
-}
-#side-project-card {
-  border-radius: 30px;
-}
 </style>

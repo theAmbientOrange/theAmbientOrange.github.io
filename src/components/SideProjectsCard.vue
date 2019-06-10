@@ -1,21 +1,17 @@
 <template>
-  <v-card id="side-project-card">
-    <v-container class="paul">
-      <v-layout align-center justify-center>
-        <img class="side-project-image" v-if="!cardDetails.showDescription" :src="cardDetails.src">
-        <!-- <v-container fill-height fluid pa-2>
-                  <v-layout fill-height></v-layout>
-        </v-container>-->
+  <v-card class="card-flex">
+    <v-container class="card-container">
+      <div class="upper-card-container">
+        <img class="card-image" v-if="!cardDetails.showDescription" :src="cardDetails.src">
         <v-textarea
+          class="card-description"
           v-else
-          class="align-center justify-center fill-height text-xs-center pa-1"
-          id="guy"
-          disabled
-          solo
+          rows="10"
+          :value="cardDetails.description"
+          readonly
           outline
-          value="yo"
         ></v-textarea>
-      </v-layout>
+      </div>
     </v-container>
 
     <v-card-actions>
@@ -44,7 +40,6 @@ export default {
   },
   methods: {
     handleOnDescriptionClick(cardDetails) {
-      console.log("YEEEEAAAH " + cardDetails.showDescription);
       cardDetails.showDescription = !cardDetails.showDescription;
     }
   }
@@ -52,4 +47,31 @@ export default {
 </script>
 
 <style>
+.card-container {
+  overflow: hidden;
+  position: relative;
+  height: 50vw;
+  width: 100%;
+}
+
+.card-image {
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.upper-card-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-flex {
+  border-radius: 30px;
+}
+
+/* .card-description {
+  height: 100%;
+} */
 </style>
