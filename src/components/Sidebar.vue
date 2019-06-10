@@ -8,8 +8,8 @@
       </v-toolbar-title>
     </v-toolbar>
 
-    <v-navigation-drawer v-model="showSidebar" app class="indigo">
-      <v-list dense class="pt-50">
+    <v-navigation-drawer v-model="showSidebar" width="225" app class="blue lighten-3">
+      <v-list three-line class="pt-50">
         <v-list-tile v-for="item in items" :key="item.text" @click="handleOnClick(item)">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -30,9 +30,10 @@ export default {
     return {
       showSidebar: false,
       items: [
-        { icon: "account_circle", text: "about", to: "#about" },
-        { icon: "work", text: "career", to: "#career" },
-        { icon: "code", text: "projects", to: "#projects" }
+        { icon: "account_circle", text: "about", to: "about" },
+        { icon: "work", text: "career", to: "career" },
+        { icon: "code", text: "side projects", to: "side-projects" },
+        { icon: "chat", text: "contact", to: "contact" }
       ]
     };
   },
@@ -41,8 +42,9 @@ export default {
       this.showSidebar = !this.showSidebar;
     },
     handleOnClick(item) {
-      // const element = document.getElementById(item.text);
-      // element.scrollIntoView();
+      const element = document.getElementById(item.to);
+      console.log(element);
+      element.scrollIntoView();
     }
   }
 };
