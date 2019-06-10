@@ -8,7 +8,7 @@
       <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia.</p>
       <p>I am proficient with C/C++, Java, and Python. I am familiar with Swift and Javascript.</p>
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
-      <p>Outside of work, I love making video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, playing video games, and watching MIT OpenCourseware videos.</p>
+      <p>Outside of work, I love making video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, playing video games, and taking MIT OpenCourseware classes.</p>
     </div>
     <Career/>
     <SideProjects/>
