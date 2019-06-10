@@ -20,7 +20,7 @@
       <v-btn icon>
         <v-icon color="pink" @click="handleOnDescriptionClick(cardDetails)">description</v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon v-if="cardDetails.release">
         <v-icon color="green">important_devices</v-icon>
       </v-btn>
       <v-btn icon :href="cardDetails.githubUrl" target="_blank">
@@ -57,6 +57,7 @@ export default {
 .card-image {
   object-fit: contain;
   overflow: hidden;
+  height: 75%;
 }
 
 .upper-card-container {
