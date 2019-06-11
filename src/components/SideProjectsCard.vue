@@ -24,7 +24,7 @@
         <v-icon color="green">important_devices</v-icon>
       </v-btn>
       <v-btn icon :href="cardDetails.githubUrl" target="_blank">
-        <img src="../assets/github-circle.svg">
+        <img src="@/assets/github-circle.svg">
       </v-btn>
     </v-card-actions>
   </v-card>
