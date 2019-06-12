@@ -9,6 +9,12 @@
       <p>I am proficient with C/C++, Java, and Python. I am familiar with Swift and Javascript.</p>
       <p>I am currently a software engineer in Small Business Card Tech at Capital One.</p>
       <p>Outside of work, I love making video games using Unreal Engine 4, attempting to make 3D models using Blender, running marathons, hiking, playing video games, and taking MIT OpenCourseware classes.</p>
+      <p>
+        You may download a copy of my resume
+        <a
+          href="https://github.com/theAmbientOrange/theAmbientOrange.github.io/raw/development/public/JamesWu_Resume.pdf"
+        >here</a>.
+      </p>
     </div>
     <Career/>
     <SideProjects/>
