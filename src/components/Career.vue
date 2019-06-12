@@ -48,7 +48,7 @@ export default {
         title: "intern @ Leidos",
         dates: "Summer 2016",
         description:
-          "contributed to RDUCE, a LIDAR compression application (C++)"
+          "Reduction of Data using Compression Enhancement (RDUCE), a LIDAR real-time application (C++)"
       },
       {
         color: "blue",
