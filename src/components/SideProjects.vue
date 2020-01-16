@@ -6,7 +6,7 @@
     <p>
       These projects can be found on
       <a
-        href="https://github.com/theAmbientOrange"
+        href="https://github.com/CheerfulSatchel"
         target="_blank"
       >my Github</a>.
     </p>

@@ -4,7 +4,7 @@
       <v-toolbar-side-icon @click="toggleSidebar"></v-toolbar-side-icon>
       <v-spacer></v-spacer>
       <v-toolbar-title>
-        <span class="font-weight-light">theAmbientOrange 🍊</span>
+        <span class="font-weight-light">CheerfulSatchel✌️😸</span>
       </v-toolbar-title>
     </v-toolbar>
 

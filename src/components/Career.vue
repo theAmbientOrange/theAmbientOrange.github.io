@@ -22,8 +22,16 @@ export default {
       {
         color: "blue",
         icon: "work",
+        title: "software engineer @ Collins Aerospace",
+        dates: "July 2019 - Present",
+        description:
+          "Unmanned Aerial Vehicle (UAV) mission processor load modules"
+      },
+      {
+        color: "blue",
+        icon: "work",
         title: "software engineer @ Capital One",
-        dates: "February 2018 - present",
+        dates: "February 2018 - July 2019",
         description:
           "Transaction Underwriting and Deployment Pipeline Compliance (Java, Python)"
       },
