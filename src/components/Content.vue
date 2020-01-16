@@ -7,7 +7,7 @@
       <p>My primary interests are in video game development, writing C++ code, cloud computing, and real-time systems.</p>
       <p>I received my Bachelor of Science degree in Computer Science from the University of Virginia in December 2017.</p>
       <p>I am proficient with C/C++, Java, and Python. I am familiar with Swift and Javascript.</p>
-      <p>I am currently a software engineer for Flight Controls and Navigation at Collins Aerospace.</p>
+      <p>I am currently a Flight Controls and Navigation software engineer at Collins Aerospace.</p>
       <p>Outside of work, I love making iOS applications, video games using Unreal Engine 4, and 3D models using Blender.</p>
       <p>I also run marathons, go on hikes, and play lots of video games.</p>
       <p>
