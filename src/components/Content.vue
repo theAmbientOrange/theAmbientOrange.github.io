@@ -13,7 +13,7 @@
       <p>
         You may download a copy of my resume
         <a
-          href="https://github.com/theAmbientOrange/theAmbientOrange.github.io/raw/development/public/JamesWu_Resume.pdf"
+          href="https://github.com/CheerfulSatchel/CheerfulSatchel.github.io/raw/development/public/JamesWu_Resume.pdf"
         >here</a>.
       </p>
     </div>
@@ -26,6 +26,10 @@
       </p>
       <p>
         <v-icon>email</v-icon>therealjameswu@gmail.com
+      </p>
+      <p>
+        <v-icon>group</v-icon>
+        <a href="https://www.linkedin.com/in/therealjameswu/">Connect with me on Linkedin</a>
       </p>
     </div>
   </div>

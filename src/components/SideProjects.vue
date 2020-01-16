@@ -37,9 +37,9 @@ export default {
         title: "Star Runner 2019",
         description:
           "(2019-present)\n\nInfinite running game developed using Unreal Engine 4.\n\nMy friend and I wanted to learn Unreal Engine 4 and thought this would be a good starting point.\n\nWritten with C++11.",
-        githubUrl: "https://github.com/theAmbientOrange/star-runner-2019",
+        githubUrl: "https://github.com/CheerfulSatchel/star-runner-2019",
         src:
-          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/development/src/assets/star-runner-2019-start-menu.png",
+          "https://raw.githubusercontent.com/CheerfulSatchel/CheerfulSatchel.github.io/development/src/assets/star-runner-2019-start-menu.png",
         flex: 6,
         showDescription: false
       },
@@ -47,9 +47,9 @@ export default {
         title: "Blissbot",
         description:
           "(2019-present)\n\nA Slackbot that scrapes and fetches positive news articles from https://www.goodnewsnetwork.org/ and delivers them to your Slack workspace.\n\nWritten with Python 3.6.",
-        githubUrl: "https://github.com/theAmbientOrange/blissbot",
+        githubUrl: "https://github.com/CheerfulSatchel/blissbot",
         src:
-          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/development/src/assets/blissbot.png",
+          "https://raw.githubusercontent.com/CheerfulSatchel/CheerfulSatchel.github.io/development/src/assets/blissbot.png",
         flex: 6,
         showDescription: false
       },
@@ -60,7 +60,7 @@ export default {
           "(2016-2017)\n\nMy friends and I built this Android application for Miracle Messages, the non-profit organization reconnecting the homeless with their loved ones. I was the lead mobile developer, and we deployed the app onto the Google Play store back in October 2016.\n\nWritten with Java 8.",
         githubUrl: "https://github.com/miracle-messages/mm-android-mobile",
         src:
-          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/development/src/assets/miracle-messages.png",
+          "https://raw.githubusercontent.com/CheerfulSatchel/CheerfulSatchel.github.io/development/src/assets/miracle-messages.png",
         flex: 6,
         showDescription: false
       },
@@ -70,7 +70,7 @@ export default {
           "(2018-present)\n\niOS app I am building with my friends that allows users to discover restaurants nearby via user posts and geolocation.\n\nWritten with Swift 5.",
         githubUrl: "https://github.com/aomori-nebuta/bigtuna-ios",
         src:
-          "https://raw.githubusercontent.com/theAmbientOrange/theAmbientOrange.github.io/development/src/assets/bigtunalogoblue.png",
+          "https://raw.githubusercontent.com/CheerfulSatchel/CheerfulSatchel.github.io/development/src/assets/bigtunalogoblue.png",
         flex: 6,
         showDescription: false
       }
