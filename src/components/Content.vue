@@ -9,7 +9,7 @@
       <p>I am proficient with C/C++, Java, and Python. I am familiar with Swift and Javascript.</p>
       <p>I am currently a Flight Controls and Navigation software engineer at Collins Aerospace.</p>
       <p>Outside of work, I love making iOS applications, video games using Unreal Engine 4, and 3D models using Blender.</p>
-      <p>I also run marathons, go on hikes, and play lots of video games.</p>
+      <p>I also run marathons, go on hikes, and play video games.</p>
       <p>
         You may download a copy of my resume
         <a
